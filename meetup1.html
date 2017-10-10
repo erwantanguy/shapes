@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exemple 1 de clip-path et shapes en css</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="meetup.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="meetup.html">Introduction</a></li>
+                <li><a href="meetup1.html">Image</a></li>
+                <li><a href="meetup2.html">Arbre</a></li>
+                <li><a href="meetup3.html">Blockquote</a></li>
+                <li><a href="meetup4.html">Autres exemples</a></li>
+            </ul>
+        </nav>
+        <h1>Uniquement sur webkit pour l'instant - <a href="https://codepen.io/anon/pen/zEjWVx">sur codepen</a></h1>
+        <code>shape-outside: url(images/arbre-detoure-vert-jaune.png);<br>
+            shape-image-threshold: 0.5;<br>
+    shape-margin: 10px;</code>
+        <section class="clear">
+            <div id="path1">
+                <img class="path1" src="images/arbre-detoure-vert-jaune.png" alt="arbre">
+                <p>Vestibulum et laoreet neque, id faucibus turpis. Curabitur eu eros vel ante fermentum bibendum. In maximus, magna sed efficitur finibus, enim dolor mattis turpis, vel feugiat ex sem vel est. Sed eget erat ut erat posuere sollicitudin. Aliquam vehicula nunc eget convallis viverra. Fusce a mi id nunc posuere ullamcorper vitae in sapien. Aliquam ullamcorper mauris quis nibh cursus volutpat. Praesent justo sem, laoreet ac sem quis, pulvinar blandit dui. Donec pharetra, leo quis finibus mattis, justo felis egestas nunc, nec mollis lectus massa quis lacus. Integer sed ultricies eros. Quisque sit amet neque condimentum, mollis mi consectetur, pellentesque dolor. Aenean eu arcu a erat elementum tempor a eget nisl. Praesent egestas odio ut dolor luctus, egestas consequat orci lobortis.</p>
+            </div>
+            <div id="autrepath">
+                <h2>shape-inside et shape-padding inactif encore</h2>
+                <aside>
+                    Vestibulum et laoreet neque, id faucibus turpis. Curabitur eu eros vel ante fermentum bibendum. In maximus, magna sed efficitur finibus, enim dolor mattis turpis, vel feugiat ex sem vel est. Sed eget erat ut erat posuere sollicitudin. Aliquam vehicula nunc eget convallis viverra. Fusce a mi id nunc posuere ullamcorper vitae in sapien.
+                </aside>
+                <p>Vestibulum et laoreet neque, id faucibus turpis. Curabitur eu eros vel ante fermentum bibendum. In maximus, magna sed efficitur finibus, enim dolor mattis turpis, vel feugiat ex sem vel est. Sed eget erat ut erat posuere sollicitudin. Aliquam vehicula nunc eget convallis viverra. Fusce a mi id nunc posuere ullamcorper vitae in sapien. Aliquam ullamcorper mauris quis nibh cursus volutpat. Praesent justo sem, laoreet ac sem quis, pulvinar blandit dui. Donec pharetra, leo quis finibus mattis, justo felis egestas nunc, nec mollis lectus massa quis lacus. Integer sed ultricies eros. Quisque sit amet neque condimentum, mollis mi consectetur, pellentesque dolor. Aenean eu arcu a erat elementum tempor a eget nisl. Praesent egestas odio ut dolor luctus, egestas consequat orci lobortis.</p>
+            </div>
+        </section>
+        <footer>
+            Meetup CSS FLip - 2017 - La Cordée
+        </footer>
+    </body>
+</html>

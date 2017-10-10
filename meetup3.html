@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exemple 3 de clip-path et shapes en css</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="meetup.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="meetup.html">Introduction</a></li>
+                <li><a href="meetup1.html">Image</a></li>
+                <li><a href="meetup2.html">Arbre</a></li>
+                <li><a href="meetup3.html">Blockquote</a></li>
+                <li><a href="meetup4.html">Autres exemples</a></li>
+            </ul>
+        </nav>
+        <h1>Polygon et blockquote - <a href="https://codepen.io/anon/pen/eGrrYO">sur codepen</a></h1>
+        <h2>Fonctionne partiellement sous firefox</h2>
+        <code>shape-outside: content-box;<br>
+    shape-margin: 20px;<br>
+    margin: 105px 10px 3px 0;<br>
+    padding: 10px;<br>
+    float: left;</code>
+        <hr>
+        <code>border-radius: 50%;<br>
+    shape-outside: border-box;<br>
+    float: left;<br>
+    shape-margin: 10px;<br>
+    margin-right: 10px;</code>
+        <p>shape-margin n'est pas pris en charge par Firefox mais gère content-box et border-box</p>
+        <section class="clear">
+            <div id="path3">
+                <blockquote class="path3">
+                    Nullam odio urna, molestie non malesuada.
+                </blockquote>
+                <p>Vestibulum et laoreet neque, id faucibus turpis. Curabitur eu eros vel ante fermentum bibendum. In maximus, magna sed efficitur finibus, enim dolor mattis turpis, vel feugiat ex sem vel est. Sed eget erat ut erat posuere sollicitudin. Aliquam vehicula nunc eget convallis viverra. Fusce a mi id nunc posuere ullamcorper vitae in sapien. Aliquam ullamcorper mauris quis nibh cursus volutpat. Praesent justo sem, laoreet ac sem quis, pulvinar blandit dui. Donec pharetra, leo quis finibus mattis, justo felis egestas nunc, nec mollis lectus massa quis lacus. Integer sed ultricies eros. Quisque sit amet neque condimentum, mollis mi consectetur, pellentesque dolor. Aenean eu arcu a erat elementum tempor a eget nisl. Praesent egestas odio ut dolor luctus, egestas consequat orci lobortis.</p>
+            </div>
+            <div id="path4">
+                <canvas></canvas>
+                <p>Vestibulum et laoreet neque, id faucibus turpis. Curabitur eu eros vel ante fermentum bibendum. In maximus, magna sed efficitur finibus, enim dolor mattis turpis, vel feugiat ex sem vel est. Sed eget erat ut erat posuere sollicitudin. Aliquam vehicula nunc eget convallis viverra. Fusce a mi id nunc posuere ullamcorper vitae in sapien. Aliquam ullamcorper mauris quis nibh cursus volutpat. Praesent justo sem, laoreet ac sem quis, pulvinar blandit dui. Donec pharetra, leo quis finibus mattis, justo felis egestas nunc, nec mollis lectus massa quis lacus.</p>
+            </div>
+        </section>
+        <footer>
+            Meetup CSS FLip - 2017 - La Cordée
+        </footer>
+    </body>
+</html>
